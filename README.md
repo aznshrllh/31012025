@@ -28,3 +28,27 @@ A frontend implementation of Bakmi GM mobile app's home page using React and Nex
 ```bash
 git clone https://github.com/aznshrllh/31012025.git
 ```
+
+2. Install dependencies:
+
+```
+cd bakmi-gm-clone
+npm install
+```
+
+3. Run the development server:
+
+```
+npm run dev
+```
+
+4. Open http://localhost:3000 in your browser
+
+5. Setting your browser to IPhone XR size
+
+## Notes
+
+- This is a frontend-only implementation
+- All data is static/hardcoded
+- Built for learning purposes
+- Focused on mobile-first design
