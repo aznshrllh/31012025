@@ -139,7 +139,15 @@ export default function Home() {
       </div>
       <div>
         <h1>Privillage</h1>
-        <CardPrivillages />
+        {privillages.map((privillage) => (
+          <CardPrivillages
+            key={privillage.id}
+            name={privillage.name}
+            imgUrl={privillage.imgUrl}
+            expire={privillage.expire}
+          />
+        ))}
+        {/* // <CardPrivillages /> */}
       </div>
       <div>
         <h1>Outlet Location</h1>
