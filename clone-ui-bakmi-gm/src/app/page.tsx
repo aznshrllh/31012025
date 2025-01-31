@@ -125,33 +125,60 @@ export default function Home() {
         <h1>Image like banner</h1>
       </div>
       <div>
-        <h1>Redeem Award</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="flex ">
+          <div className="w-4/5">
+            <h1 className="">Redeem Your Award</h1>
+            <h5>Earn more to get your rewards</h5>
+          </div>
+          <div className="w-1/5">
+            <button className="btn btn-ghost">See all</button>
+          </div>
+        </div>
+        <div className="flex overflow-x-auto gap-4 px-4 py-2 snap-x scrollbar-hide">
           {reedemRewards.map((reward) => (
-            <CardRedeemAward
-              key={reward.id}
-              name={reward.name}
-              imgUrl={reward.imgUrl}
-              point={reward.point}
+            <div className="flex-none w-[280px] snap-start" key={reward.id}>
+              <CardRedeemAward
+                name={reward.name}
+                imgUrl={reward.imgUrl}
+                point={reward.point}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="px-4">
+        {" "}
+        {/* Add padding for mobile */}
+        <h1 className="text-xl font-bold mb-4">Privillage</h1>
+        <div className="grid grid-cols-2 gap-2 auto-rows-auto">
+          {privillages.map((privillage) => (
+            <CardPrivillages
+              key={privillage.id}
+              name={privillage.name}
+              imgUrl={privillage.imgUrl}
+              expire={privillage.expire}
             />
           ))}
         </div>
       </div>
-      <div>
-        <h1>Privillage</h1>
-        {privillages.map((privillage) => (
-          <CardPrivillages
-            key={privillage.id}
-            name={privillage.name}
-            imgUrl={privillage.imgUrl}
-            expire={privillage.expire}
-          />
-        ))}
-        {/* // <CardPrivillages /> */}
-      </div>
-      <div>
-        <h1>Outlet Location</h1>
-        <TableLocation />
+      <div className="px-4">
+        <div className="space-y-4">
+          <div className="flex flex-col mt-4">
+            <h2 className="text-lg font-bold">Our Locations</h2>
+            <h5 className="text-xs text-gray-500">Explore your options</h5>
+          </div>
+          {locations.map((location) => (
+            <TableLocation
+              key={location.id}
+              name={location.name}
+              address={location.address}
+              distance={location.distance}
+            />
+          ))}
+        </div>
+        <div className="flex justify mb-8">
+          <button className="btn btn-ghost text-orange-400">See all</button>
+        </div>
       </div>
     </>
   );

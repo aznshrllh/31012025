@@ -10,32 +10,14 @@ export default function CardPrivillages({
   expire,
 }: CardPrivillagesProps) {
   return (
-    <div className="card card-compact bg-base-100 w-96 shadow-xl">
-      <figure>
-        <img src={imgUrl} alt={name} />
+    <div className="card card-compact bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+      <figure className="h-40 overflow-hidden">
+        <img src={imgUrl} alt={name} className="w-full h-full object-cover" />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <p>Exp. {expire}</p>
-        {/* <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-        </div> */}
+      <div className="card-body p-4">
+        <h2 className="card-title text-sm">{name}</h2>
+        <p className="text-xs text-gray-600">Exp. {expire}</p>
       </div>
     </div>
-    // <div className="card card-compact bg-base-100 w-96 shadow-xl">
-    //   <figure>
-    //     <img
-    //       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-    //       alt="Shoes"
-    //     />
-    //   </figure>
-    //   <div className="card-body">
-    //     <h2 className="card-title">Shoes!</h2>
-    //     <p>If a dog chews shoes whose shoes does he choose?</p>
-    //     <div className="card-actions justify-end">
-    //       <button className="btn btn-primary">Buy Now</button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
