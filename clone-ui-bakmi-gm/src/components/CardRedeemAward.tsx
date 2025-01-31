@@ -16,10 +16,7 @@ export default function CardRedeemAward({
       </figure>
       <div className="card-body p-4">
         <h2 className="card-title text-sm">{name}</h2>
-        <p className="text-xs text-gray-600">{point} Points</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary btn-sm">Redeem Now</button>
-        </div>
+        <p className="text-xs text-orange-400 font-bold">{point} Points</p>
       </div>
     </div>
   );

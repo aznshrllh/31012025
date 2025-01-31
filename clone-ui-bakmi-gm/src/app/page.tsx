@@ -110,134 +110,128 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <div>
-        <div>
-          <h1>Your Level</h1>
+      <div className="px-4 py-2">
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex justify-between items-center mb-4">
+            <h1 className="text-lg font-bold">Your Level</h1>
+            <a
+              href="#"
+              className="text-xs text-orange-400 font-bold hover:underline"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-2">
+                <span className="text-xs">Silver</span>
+              </div>
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+            </div>
+
+            <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
+
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center mb-2">
+                <span className="text-xs">Gold</span>
+              </div>
+              <div className="w-2 h-2 bg-gray-200 rounded-full"></div>
+            </div>
+
+            <div className="flex-1 h-[2px] bg-gray-200 mx-2"></div>
+
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center mb-2">
+                <span className="text-xs">Platinum</span>
+              </div>
+              <div className="w-2 h-2 bg-gray-200 rounded-full"></div>
+            </div>
+          </div>
+
+          <p className="text-xs text-gray-500 text-center">
+            Spend 3.500.001 by November 2025 to reach Gold
+          </p>
         </div>
       </div>
-      <div>
-        <h1> Bakmi GM Points</h1>
+
+      {/* Bakmi GM Points */}
+      <div className="px-4 py-2">
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex justify-between items-center">
+            <div className="space-y-1">
+              <h1 className="text-lg font-bold">Bakmi GM Points</h1>
+              <p className="text-xs text-gray-500">
+                40 will expire on 22 Februari 2025.{" "}
+                <a href="#" className="text-xs text-blue-600 hover:underline">
+                  See Details
+                </a>
+              </p>
+            </div>
+            <div className="text-xl font-bold text-black">40</div>
+          </div>
+        </div>
       </div>
 
       {/* icon menu */}
       <div className="px-4 py-2">
         <div className="grid grid-cols-3 gap-4">
+          {/* Order - Blue */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-blue-500">
+                shopping_cart
+              </span>
             </div>
             <span className="text-xs mt-1">Order</span>
           </div>
 
+          {/* Redeem - Red */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-red-500">
+                redeem
+              </span>
             </div>
             <span className="text-xs mt-1">Redeem</span>
           </div>
 
+          {/* My Voucher - Pink */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-pink-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-pink-500">
+                confirmation_number
+              </span>
             </div>
             <span className="text-xs mt-1">My Voucher</span>
           </div>
 
+          {/* Privilege - Purple */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-purple-500">
+                star
+              </span>
             </div>
             <span className="text-xs mt-1">Privilege</span>
           </div>
 
+          {/* History - Violet */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-violet-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-violet-500">
+                calendar_month
+              </span>
             </div>
             <span className="text-xs mt-1">History</span>
           </div>
 
+          {/* Contact Us - Green */}
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
+            <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
+              <span className="material-icons text-2xl text-green-500">
+                forum
+              </span>
             </div>
             <span className="text-xs mt-1">Contact Us</span>
           </div>
@@ -246,12 +240,15 @@ export default function Home() {
 
       {/* banner invite teman */}
       <div className="px-4 py-2">
-        <div className="w-full h-40 rounded-lg overflow-hidden">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            alt="Promo Banner"
-            className="w-full h-full object-cover"
-          />
+        <div className="w-full h-40 rounded-lg overflow-hidden bg-gradient-to-r from-purple-500 to-blue-500 flex flex-col justify-center px-4 text-white">
+          <h2 className="text-xl font-bold mb-8 text-right">
+            Dapatkan 5 Poin dengan mengajak teman kamu
+          </h2>
+          <div className="flex justify-end">
+            <button className="btn btn-sm bg-white text-purple-500 hover:bg-gray-100 border-none">
+              REFER NOW
+            </button>
+          </div>
         </div>
       </div>
 
@@ -264,9 +261,11 @@ export default function Home() {
               Earn more to get your rewards
             </h5>
           </div>
-          <button className="btn btn-ghost btn-sm">See all</button>
+          <button className="btn btn-ghost btn-sm text-orange-400">
+            See all
+          </button>
         </div>
-        <div className="flex overflow-x-auto gap-3 snap-x scrollbar-hide -mx-4 px-4 -ml-1">
+        <div className="flex overflow-x-auto gap-3 snap-x scrollbar-hide -mx-4 px-4 -ml-1 -mr-1">
           {reedemRewards.map((reward) => (
             <div
               className="flex-none w-[160px] snap-start mb-2"
