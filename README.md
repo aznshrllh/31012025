@@ -32,7 +32,7 @@ git clone https://github.com/aznshrllh/31012025.git
 2. Install dependencies:
 
 ```
-cd bakmi-gm-clone
+cd clone-ui-bakmi-gm
 npm install
 ```
 
