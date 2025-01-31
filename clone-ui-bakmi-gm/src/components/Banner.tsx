@@ -4,25 +4,25 @@ export default function Banner() {
       <div className="carousel w-full scroll-smooth snap-x snap-mandatory">
         <div id="item1" className="carousel-item w-full h-48">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            src="https://www.bakmigm.co.id/cfind/source/thumb/images/banner/promo-cuan-2025/cover_w1112_h572_promo-cuan_web-banner--920-x-473-px-1.jpg"
             className="w-full h-full object-cover"
           />
         </div>
         <div id="item2" className="carousel-item w-full h-48">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            src="https://www.bakmigm.co.id/cfind/source/thumb/images/banner/fortune-hampers-2025/cover_w1112_h572_web-banner-920-x-473.png"
             className="w-full h-full object-cover"
           />
         </div>
         <div id="item3" className="carousel-item w-full h-48">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            src="https://www.bakmigm.co.id/cfind/source/thumb/images/banner/promo-angpao-jan-25/cover_w1112_h572_fa-promo-angpao_web-banner--920-x-473-px.jpg"
             className="w-full h-full object-cover"
           />
         </div>
         <div id="item4" className="carousel-item w-full h-48">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            src="https://www.bakmigm.co.id/cfind/source/thumb/images/banner/promo-paket-makan-tengah/cover_w1112_h572_web-banner-920x473px.jpg"
             className="w-full h-full object-cover"
           />
         </div>

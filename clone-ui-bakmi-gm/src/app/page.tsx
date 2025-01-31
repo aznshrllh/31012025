@@ -10,21 +10,21 @@ export default function Home() {
       id: 1,
       name: "Es Teh Manis",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
+        "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/13c95b20-96a2-46eb-9412-27d6cc9cfbd4_Go-Biz_20200919_160218.jpeg",
       point: 40,
     },
     {
       id: 2,
       name: "Es Lemon Teh",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1b5kbcE1-xokvKMoB3pbMood_DH0rtqfSng&s",
       point: 45,
     },
     {
       id: 3,
       name: "Es Jeruk",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
+        "https://dcostseafood.id/wp-content/uploads/2021/12/ES-JERUK-murni.jpg",
       point: 300,
     },
   ];
@@ -34,42 +34,42 @@ export default function Home() {
       id: 1,
       name: "Platinum Member",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
+        "https://www.shutterstock.com/image-vector/vip-platinum-membership-badge-premium-600w-1731306640.jpg",
       expire: "12/12/2022",
     },
     {
       id: 2,
       name: "Gold Member",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
+        "https://5.imimg.com/data5/SELLER/Default/2022/12/EL/AE/AP/181507398/gold-membership.png",
       expire: "12/12/2022",
     },
     {
       id: 3,
       name: "Silver Member",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC8HjtWsnTfuT5HKtyMGIdk5MX-jtVIpO5g&s",
       expire: "12/12/2022",
     },
     {
       id: 4,
       name: "Birthday Reward",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHwHEP5yG2hPUZaiwabKkh7GmBeEqPnkrCw&s",
       expire: "12/12/2022",
     },
     {
       id: 5,
       name: "Reedem Point",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mXs8WdoPh_Pm9iBzNtRcQZNHw2Afn24RcQ&s",
       expire: "12/12/2022",
     },
     {
       id: 6,
       name: "Sign Up Reward",
       imgUrl:
-        "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KlEYi_SizcM--jJgxyJttff07ffK_aolHg&s",
       expire: "12/12/2022",
     },
   ];
@@ -254,7 +254,7 @@ export default function Home() {
 
       {/* redeem award */}
       <div className="px-4 py-2">
-        <div className="flex justify-between items-center mb-2">
+        <div className="flex justify-between items-center mb-2 mt-2">
           <div>
             <h1 className="text-lg font-bold">Redeem Your Award</h1>
             <h5 className="text-xs text-gray-500">
