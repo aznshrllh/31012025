@@ -35,42 +35,42 @@ export default function Home() {
       name: "Platinum Member",
       imgUrl:
         "https://www.shutterstock.com/image-vector/vip-platinum-membership-badge-premium-600w-1731306640.jpg",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
     {
       id: 2,
       name: "Gold Member",
       imgUrl:
         "https://5.imimg.com/data5/SELLER/Default/2022/12/EL/AE/AP/181507398/gold-membership.png",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
     {
       id: 3,
       name: "Silver Member",
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC8HjtWsnTfuT5HKtyMGIdk5MX-jtVIpO5g&s",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
     {
       id: 4,
       name: "Birthday Reward",
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHwHEP5yG2hPUZaiwabKkh7GmBeEqPnkrCw&s",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
     {
       id: 5,
       name: "Reedem Point",
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mXs8WdoPh_Pm9iBzNtRcQZNHw2Afn24RcQ&s",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
     {
       id: 6,
       name: "Sign Up Reward",
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KlEYi_SizcM--jJgxyJttff07ffK_aolHg&s",
-      expire: "12/12/2022",
+      expire: "12/12/2025",
     },
   ];
 
